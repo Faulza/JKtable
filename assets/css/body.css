@@ -1,0 +1,81 @@
+.column {
+    float: left;
+}
+  
+.column.profile {
+    width: 25%;
+    border-width: 1pt;
+    border-style: solid;
+}
+  
+.column.data {
+    width: 70%;
+    border-width: 1pt;
+    border-style: solid;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+
+@media screen and (max-width: 600px) {    
+    .column.profile, .column.data {
+      width: 100%;
+    }
+}
+
+.table {
+    width:100%;
+}
+
+.table, .th, .td {
+    border: 1px solid cornflowerblue;
+    border-collapse: collapse;
+}
+
+.th, .td {
+    padding: 15px;
+    text-align: left;
+}
+
+.table#t01 .tr:nth-child(even) {
+    background-color: grey;
+}
+
+.table#t01 .tr:nth-child(odd) {
+   background-color: grey;
+}
+
+.table#t01 th {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#button{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 4px;
+    cursor: pointer;
+  }
+  
+.button_edit {background-color: #4CAF50;} /* Green */
+.button_save {background-color: #008CBA;} /* Blue */
+
+#wrapper-button{
+	display: flex;
+	flex-direction: row;
+}
